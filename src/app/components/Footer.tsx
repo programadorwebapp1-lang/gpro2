@@ -31,7 +31,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="flex items-center gap-2">
-                <img src="/favicon.png" alt="Logo" className="w-15 h-15 rounded" />
+                <img src="/favicon.svg" alt="Logo" className="w-15 h-15 rounded" />
               </div>
               <span className="text-xl font-bold text-white">GestãoPro</span>
             </div>

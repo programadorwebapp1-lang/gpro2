@@ -51,7 +51,7 @@ export function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <img src="/favicon.png" alt="Logo" className="w-15 h-15 rounded" />
+            <img src="/favicon.svg" alt="Logo" className="w-15 h-15 rounded" />
             <span className="text-xl font-bold text-[#0F172A]">GestãoPro</span>
           </div>
 
