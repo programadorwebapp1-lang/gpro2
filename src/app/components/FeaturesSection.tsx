@@ -28,7 +28,7 @@ const features = [
   {
     icon: Package,
     title: "Cadastrar Produtos",
-    description: "Cadastrar seus Produtos, Preço , Categoria e Marca ",
+    description: "Cadastrar seus Produtos, Preço , Categoria, marca, etc. ",
     color: "bg-indigo-100 text-indigo-600"
   },
   {

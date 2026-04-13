@@ -9,6 +9,11 @@ import {
 
 const automations = [
   {
+    icon: Plug,
+    title: "Muitas integrações disponíveis",
+    description: "Nosso sistema possui integração com muitos serviços e plataformas. São diversas opções para você escolher e conectar conforme sua necessidade.",
+  },
+  {
     icon: ReceiptText,
     title: "Comprovante de compra automático",
     description:

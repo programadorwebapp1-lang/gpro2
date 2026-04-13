@@ -22,7 +22,7 @@ export function HeroSection() {
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Simplifique a gestão do seu negócio com uma plataforma completa,
-                moderna e fácil de usar. Ideal para comércios, lojas, farmácias e mercados.
+                moderna e fácil de usar. Ideal para comércios, lojas e mercados.
               </p>
             </div>
 

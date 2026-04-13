@@ -51,9 +51,7 @@ export function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#0F172A] to-[#0ea5e9] rounded-lg flex items-center justify-center">
-              <BarChart3 className="w-6 h-6 text-white" />
-            </div>
+            <img src="/favicon.png" alt="Logo" className="w-15 h-15 rounded" />
             <span className="text-xl font-bold text-[#0F172A]">GestãoPro</span>
           </div>
 

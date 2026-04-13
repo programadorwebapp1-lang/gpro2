@@ -21,6 +21,21 @@ const benefits = [
     title: "Ideal para Pequenos Negócios",
     description: "Desenvolvido especialmente para as necessidades de comércios, lojas e mercados.",
   },
+  {
+    icon: Smartphone,
+    title: "App de Código de Barras",
+    description: "Aplicativo para celular que permite leitura de códigos de barras, facilitando o controle de produtos.",
+  },
+  {
+    icon: Zap,
+    title: "Impressão de Etiquetas",
+    description: "Gere e imprima etiquetas personalizadas para produtos de forma rápida e prática.",
+  },
+  {
+    icon: Zap,
+    title: "Impressão de Cupom",
+    description: "Emita cupons de venda diretamente pelo sistema, agilizando o atendimento ao cliente.",
+  },
 ];
 
 export function BenefitsSection() {

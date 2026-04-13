@@ -28,7 +28,8 @@ export function CTASection() {
           </button>
 
           <a
-            href="mailto:contato@programadorwebapp1@gmail.com"
+            href="mailto:contato@gestaoprogp@gmail.com
+"
             className="px-8 py-4 bg-white text-[#0F172A] rounded-lg hover:bg-gray-100 transition-all border-2 border-white"
           >
             Enviar Email
@@ -45,7 +46,8 @@ export function CTASection() {
             <div className="hidden sm:block w-px h-6 bg-gray-700"></div>
             <div className="flex items-center gap-2">
               <span>📧</span>
-              <span>contato@programadorwebapp1@gmail.com</span>
+              <span>contato@gestaoprogp@gmail.com
+              </span>
             </div>
             <div className="hidden sm:block w-px h-6 bg-gray-700"></div>
             <div className="flex items-center gap-2">
