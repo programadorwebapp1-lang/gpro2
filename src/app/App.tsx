@@ -10,6 +10,9 @@ import { PricingSection } from "./components/PricingSection";
 import { CTASection } from "./components/CTASection";
 import { Footer } from "./components/Footer";
 import { VideoPage } from "./components/VideoPage";
+import PoliticaDePrivacidade from "./components/PoliticaDePrivacidade";
+import TermosDeUso from "./components/TermosDeUso";
+import { CookieConsent } from "./components/CookieConsent";
 
 function HomeContent() {
   const location = useLocation();
@@ -48,9 +51,12 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomeContent />} />
           <Route path="/videos" element={<VideoPage />} />
+          <Route path="/politica-de-privacidade" element={<PoliticaDePrivacidade />} />
+          <Route path="/termos-de-uso" element={<TermosDeUso />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
+      <CookieConsent />
     </div>
   );
 }

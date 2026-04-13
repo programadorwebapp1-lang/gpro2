@@ -1,13 +1,25 @@
-import { BarChart3 } from "lucide-react";
-
+import { useNavigate, useLocation } from "react-router-dom";
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const scrollToSection = (id: string) => {
+    const sectionHref = `/#${id}`;
+    if (location.pathname !== "/") {
+      navigate(sectionHref);
+      return;
+    }
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate(sectionHref);
     }
+  };
+
+  const goToVideoPage = () => {
+    navigate("/videos");
   };
 
   return (
@@ -18,8 +30,8 @@ export function Footer() {
           {/* Brand Section */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#0ea5e9] to-[#06b6d4] rounded-lg flex items-center justify-center">
-                <BarChart3 className="w-6 h-6 text-white" />
+              <div className="flex items-center gap-2">
+                <img src="/favicon.png" alt="Logo" className="w-15 h-15 rounded" />
               </div>
               <span className="text-xl font-bold text-white">GestãoPro</span>
             </div>
@@ -34,7 +46,7 @@ export function Footer() {
           {/* Quick Links */}
           <div>
             <h3 className="text-white font-bold mb-4">Links Rápidos</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-2">
               <li>
                 <button
                   onClick={() => scrollToSection("inicio")}
@@ -53,6 +65,14 @@ export function Footer() {
               </li>
               <li>
                 <button
+                  onClick={() => scrollToSection("api-integracoes")}
+                  className="hover:text-[#0ea5e9] transition-colors cursor-pointer"
+                >
+                  API para integrações
+                </button>
+              </li>
+              <li>
+                <button
                   onClick={() => scrollToSection("telas")}
                   className="hover:text-[#0ea5e9] transition-colors cursor-pointer"
                 >
@@ -65,6 +85,14 @@ export function Footer() {
                   className="hover:text-[#0ea5e9] transition-colors cursor-pointer"
                 >
                   Planos
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={goToVideoPage}
+                  className="hover:text-[#0ea5e9] transition-colors cursor-pointer"
+                >
+                  Vídeos
                 </button>
               </li>
             </ul>
@@ -112,16 +140,30 @@ export function Footer() {
               © {currentYear} GestãoPro. Todos os direitos reservados.
             </p>
             <div className="flex gap-6 text-sm">
-              <a href="#" className="hover:text-[#0ea5e9] transition-colors">
+              <a
+                href="/politica-de-privacidade"
+                className="hover:text-[#0ea5e9] transition-colors"
+                onClick={e => {
+                  e.preventDefault();
+                  navigate("/politica-de-privacidade");
+                }}
+              >
                 Política de Privacidade
               </a>
-              <a href="#" className="hover:text-[#0ea5e9] transition-colors">
+              <a
+                href="/termos-de-uso"
+                className="hover:text-[#0ea5e9] transition-colors"
+                onClick={e => {
+                  e.preventDefault();
+                  navigate("/termos-de-uso");
+                }}
+              >
                 Termos de Uso
               </a>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 }
