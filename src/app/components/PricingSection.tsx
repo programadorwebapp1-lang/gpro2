@@ -8,8 +8,8 @@ const plans = [
     period: "/mês",
     description: "Perfeito para começar",
     features: [
-      "Até 65 produtos cadastrados",
-      "1 usuário",
+      "Até 70 produtos cadastrados",
+      "3 usuários sem contar o administrador",
       "Gestão de vendas básica",
       "Controle de estoque",
       "Relatórios simples",
@@ -25,8 +25,8 @@ const plans = [
     period: "/mês",
     description: "Mais vendido",
     features: [
-      "Até 120 produtos",
-      "3 usuários",
+      "Até 150 produtos",
+      "5 usuários sem contar o administrador",
       "Todas as funcionalidades",
       "Gestão de clientes completa",
       "Relatórios avançados",
